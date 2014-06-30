@@ -1,0 +1,13 @@
+name: "Christoph"
+encoding: utf-8
+safe: true
+timezone: Europe/London
+markdown: redcarpet
+highlighter: pygments
+permalink: :title
+exclude: [README.md, LICENSE, Makefile]
+
+# Information for the Atom feed
+gereksiz:
+   author: "Christoph Gockel"
+   email: "cgockel@8thlight.com"
