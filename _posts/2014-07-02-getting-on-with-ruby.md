@@ -15,6 +15,6 @@ A cool thing in the evening was, [Sandi Metz](https://twitter.com/sandimetz) gav
 
 The talk is about how it helps when you focus on creating little things. Like small classes, short methods and such. The smaller the piece of code is, the easier it is  to understand, and more important: the easier it is to change.
 
-Sandi showed in a code heavy presentation how she approached the [Gilded Rose Kata](http://craftsmanship.sv.cmu.edu/katas/gilded-rose-kata) (which I’ve never heard of before). Code heavy presentations often have a boring or unreadable touch to them, but I think she did a good job at leaving unimportant things out when progressing through the slides and always focussed on the most important parts.
+With code heavy slides, Sandi showed how she approached the [Gilded Rose Kata](http://craftsmanship.sv.cmu.edu/katas/gilded-rose-kata) (which I’ve never heard of before). Code heavy presentations often have a boring or unreadable touch to them, but I think she did a good job at leaving unimportant things out when progressing through the slides and always focussed on the most important parts.
 
 It was a good reminder that I probably should read [POODR](http://www.poodr.com/) again. But first I’ll finish [Software Craftsmanship  &ndash; Professionalism, Pragmatism, Pride](https://leanpub.com/socra).
