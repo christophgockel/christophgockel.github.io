@@ -9,7 +9,7 @@ I didn’t achieve all I planned for today, but I think I have to accept that it
 
 Unfortunately I had to leave the office earlier today. In the afternoon I had an appointment at Jobcentre Plus to apply for my National Insurance Number. Which is needed as soon as you start working in the U.K. But apart from registering at a GP (which I’ll do once I have a proper room/appartment), this was the last authority visit I had on my list. _Yay!_
 
-A cool thing in the evening was, [Sandi Metz](https://twitter.com/sandimetz) gave her talk &ldquo;All the Little Things&rdquo; at the BBC Broadcasting House. As [Daniel](www.8thlight.com/apprentices/daniel-irvine) couldn’t make it to the talk, he was so kind to give me his ticket. So [Uku](http://www.8thlight.com/apprentices/uku-taht), [Makis](http://www.8thlight.com/apprentices/makis-otman) and me went to it. _Thanks again, David!_
+A cool thing in the evening was, [Sandi Metz](https://twitter.com/sandimetz) gave her talk &ldquo;All the Little Things&rdquo; at the BBC Broadcasting House. As [Daniel](www.8thlight.com/apprentices/daniel-irvine) couldn’t make it to the talk, he was so kind to give me his ticket. So [Uku](http://www.8thlight.com/apprentices/uku-taht), [Makis](http://www.8thlight.com/apprentices/makis-otman) and me went to it. _Thanks again, Daniel!_
 
 [There’s a recorded version from RailsConf 2014 online.](https://www.youtube.com/watch?v=8bZh5LMaSmE)
 
