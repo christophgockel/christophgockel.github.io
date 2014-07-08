@@ -20,10 +20,10 @@ I felt that returning `nil` is probably not the best solution I could come up wi
 
 &ldquo;_I can refactor that at a later point in time easily_&rdquo; I said to myself.
 
+As things progressed I forgot about that tiny gap I had in my `Rules` public API.
+
 > _Remark_:
 I like the way how Kent Beck explained it in his book &ldquo;Test-Driven Development by Example&rdquo;. While you are working on a particular feature, you keep notes of refactoring that you can't make right now, but want to keep in mind.
-
-As things progressed I forgot about that tiny gap I had in my `Rules` public API.
 
 And then it was _this_ very gap that caused me so much trouble.
 Because the method didn't differentiate between having a real winner or having a draw, the [Negamax](http://en.wikipedia.org/wiki/Negamax) implementation chose wrong locations. But just under certain constellations of a board, it didn't chose the wrong locations all the time. That's why I was so confused.
