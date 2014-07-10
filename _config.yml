@@ -6,6 +6,7 @@ markdown: redcarpet
 highlighter: pygments
 permalink: :title
 exclude: [README.md, LICENSE, Makefile]
+environment: production
 
 # Information for the Atom feed
 gereksiz:
