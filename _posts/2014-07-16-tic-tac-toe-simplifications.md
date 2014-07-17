@@ -5,9 +5,17 @@ title: Tic Tac Toe Simplifications
 
 Today was all about simplifications in my Tic Tac Toe implementation.
 
+I [could simplify my previous](https://github.com/christophgockel/tictactoe-ruby/commit/2b0422c868a0f79112ddbcacda00b230996406fd) `Player` and `CommandLineIO` attempts to separate a player in the game from its input mechanism. The old version of `Player` didn't have any real behavior in it. It was basically just delegating the `next_move()` method to its so called &ldquo;input object&rdquo; (e.g. an instance of `CommandlineIO`). As shown in the image below.
+
+![Initial design of Player class]({{ site.url }}/assets/ttt_player_inputstrategy.jpg)
+
+
+So why not merge these things together?! One thing to note though is, I'm thinking about whether &ldquo;`CommandLinePlayer`&rdquo; woud be a better name for `HumanPlayer`, but I'm still undecided about that.
+
 As I had a rough idea where I wanted to go with my code, I started with [implementing a very basic `HumanPlayer` class](https://github.com/christophgockel/tictactoe-ruby/commit/3028dec93eec47f5fd87db82711ecbf90b9153c2).
 
-After that, I [could get rid](https://github.com/christophgockel/tictactoe-ruby/commit/2b0422c868a0f79112ddbcacda00b230996406fd) of my previous `Player` and `CommandLineIO` attempts to separate a player in the game from its input mechanism. The old version of `Player` didn't have any real behavior in it. It was basically just delegating the `next_move()` method to its so called &ldquo;input object&rdquo; (e.g. an instance of `CommandlineIO`). So why not merge these things together?! One thing to note though is, I'm thinking about whether &ldquo;`CommandLinePlayer`&rdquo; woud be a better name for `HumanPlayer`, but I'm still undecided about that.
+![Refactored version of Game with players]({{ site.url }}/assets/ttt_game_players.jpg)
+The `ComputerPlayer` could be added later by [renaming the existing Negamax implementation](https://github.com/christophgockel/tictactoe-ruby/blob/2b0422c868a0f79112ddbcacda00b230996406fd/lib/computer_player.rb).
 
 The next [big change contains an overhaul of the core game logic](https://github.com/christophgockel/tictactoe-ruby/commit/06dbded4f0d13d4a1174710e8eb39c91080cf9b8). Or to put it better: how the game logic will be triggered. In the old version I passed a &ldquo;display object&rdquo; to my `Game` instance that was responsible to present any messages or UI to the user. I still think abstracting this part from the game itself was a good idea. But an improvable one as well.
 

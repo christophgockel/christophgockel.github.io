@@ -158,6 +158,9 @@ article img {
    max-width: 100%;
    vertical-align: middle;
    page-break-inside: avoid;
+
+   box-shadow: 0 0 10px #888888;
+
 }
 
 footer {
