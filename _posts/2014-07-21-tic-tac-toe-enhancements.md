@@ -10,7 +10,7 @@ Today I enhanced my Tic Tac Toe game a bit. When playing the game, there are fou
  3. Computer vs. Human
  4. Computer vs. Computer
 
-Depending on the choice made, the appropriate game setup will be created by a `GameFactory`. With the extraction of `CommandlinUI` out of `Game` I made last week, the changes needed to support different game types went relatively smooth. 
+Depending on the choice made, the appropriate game setup will be created by a `GameFactory`. With the extraction of `CommandlineUI` out of `Game` I made last week, the changes needed to support different game types went relatively smooth. 
 
 This is also reflected in [the diff of the changes](https://github.com/christophgockel/tictactoe-ruby/commit/9e21a34c702b88ea56876d2204bfb47e82725159), just a few red lines where clients of the changed code needed to be adjusted, but mostly additions to the existing code. Which is not that much of a surprise. There were new features added, and new features should result in new code to be added, and not necessarily in too many modifications of existing code.
 
