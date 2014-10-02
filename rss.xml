@@ -1,0 +1,24 @@
+---
+layout: nil
+---
+
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>{{ site.name }}</title>
+    <description>My 8th Light apprenticeship blog.</description>
+    <link>{{ site.url }}"/></link>
+    <lastBuildDate>{{ site.time | date_to_xmlschema }}</lastBuildDate>
+    <managingEditor>{{ site.gereksiz.email }} ({{ site.gereksiz.author }})</managingEditor>
+
+    {% for post in site.posts %}
+      <item>
+        <title>{{ post.title }}</title>
+        <link>{{site.url}}{{ post.url }}</link>
+        <pubDate>{{ post.date | date_to_xmlschema }}</pubDate>
+        <guid isPermaLink="true">{{ site.url }}{{ post.id }}</guid>
+        <content:encoded>{{ post.content | xml_escape }}</content:encoded>
+      </item>
+    {% endfor %}
+  </channel>
+</rss>
