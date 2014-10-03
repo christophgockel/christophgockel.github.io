@@ -2,7 +2,7 @@
 layout: post
 title: Isolate CSS
 ---
-Hiding details is a generally desirable goal when developing software.
+Hiding details is generally a desirable goal when developing software.
 
 The purpose of the above is to increase the cohesion of parts in our software, as well as to decouple them better from each other via well defined interfaces or boundaries.
 
