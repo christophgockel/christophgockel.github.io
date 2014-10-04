@@ -4,19 +4,19 @@ title: Isolate CSS
 ---
 Hiding details is generally a desirable goal when developing software.
 
-The purpose of the above is to increase the cohesion of parts in our software, as well as to decouple them better from each other via well defined interfaces or boundaries.
+The purpose of hiding details is to increase the cohesion of parts in our software, as well as to decouple them better from each other via well defined interfaces or boundaries.
 
-This is a well known approach when it comes to isolating yourself from external dependencies in your code. But why only apply it for code you write for the back-end? The same abstraction principles apply no matter what external dependency you want to isolate yourself from.
+This is a well known approach when it comes to isolating ourselves from external dependencies in our code. But why only apply it for code we write for the back-end? The same abstraction principles apply no matter what external dependency we want to isolate ourselves from.
 
-So it can and should be applied to any CSS framework you use. No matter whether you're using [Bootstrap](http://getbootstrap.com/), [Pure](http://purecss.io/), [Less](http://lessframework.com/), [Blueprint](http://www.blueprintcss.org/), [960](http://960.gs/), &hellip;
+So it can and should be applied to any CSS framework we use. No matter whether we're using [Bootstrap](http://getbootstrap.com/), [Pure](http://purecss.io/), [Less](http://lessframework.com/), [Blueprint](http://www.blueprintcss.org/), [960](http://960.gs/), &hellip;
 
-The application you write should not have any direct coupling to an external framework. There should be no CSS classes directly used that were not defined by you for your project.
+Our applications should not have any direct coupling to an external framework. There should be no CSS classes directly used that were not defined by us for our project.
 
-For my example code I will use Yahoo!'s Pure framework. But the principles apply no matter what framework you use.
+For the example code I will use Yahoo!'s [Pure framework](http://purecss.io/). But the principles apply for any framework.
 
-Pure provides `pure-g` classes to create a grid and several `pure-u-*` classes as units/columns within these grids.
+Pure provides `pure-g` classes to create a grid, and several `pure-u-*` classes as units/columns within these grids.
 
-A grid with two buttons next to each other can be done like this:
+A grid with two buttons next to each other can be defined like this:
 
 ```html
 <div class="pure-g">
@@ -29,13 +29,13 @@ A grid with two buttons next to each other can be done like this:
 </div>
 ```
 
-As you can see there are many references to the classes defined by Pure. By that we have coupled the view directly to the framework we used.
+As we can see there are many references to the classes defined by Pure. By that we have coupled the view directly to the framework we use.
 
-Directly coupling to a framework is not always the best approach. Sounds familiar? Maybe that's because whenever something like this happens in, for example, Ruby code, many developers immediately react with some hesitation by introducing such a tight coupling. But even for CSS the same abstraction and isolation principles apply.
+Directly coupling to a framework is not always a good approach. Sounds familiar? Maybe that's because whenever something like this happens in for example Ruby code, many developers immediately react with some sort of hesitation by introducing such a tight coupling. But even for CSS the same abstraction and isolation principles apply.
 
-The view belongs to your application. And therefore you should isolate any external dependency from that.
+The view belongs to our application. And therefore we should isolate any external dependency from that.
 
-It would be better if we could write the previous code in a manner that we are in charge of what CSS classes the elements need.
+It would be better if we could write the previous code in a manner that we are in charge of what CSS classes the elements use.
 
 Something like this:
 
@@ -61,7 +61,7 @@ This does a better job at expressing the intent of what the HTML is supposed to 
 I used [Sass](http://sass-lang.com) to be able to use the CSS classes just shown.
 Using Sass allows to &ldquo;[extend](http://sass-lang.com/documentation/file.SASS_REFERENCE.html#extend)&rdquo; new selectors from existing selectors.
 
-With this we can create new selectors for us that match the domain of the application we're developing.
+With this we can create new selectors for our views that match the domain of the application we're developing.
 
 The definition for the classes of the last example look like this:
 
