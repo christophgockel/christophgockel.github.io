@@ -105,6 +105,6 @@ We are now able to declare the button with better expressed intent:
 
 By isolating from the CSS framework we do not couple our views to any specific framework anymore.
 
-When we want to switch to another framework, we do not have to update all the views. We only have to update the abstraction layer between our views and the framework &ndash; which is the SCSS file. It's likely to be easier to maintain just that file instead of finding all usages of framework specific CSS classes across all existing views.
+When we want to switch to another framework, we do not have to update all the views. We only have to update the abstraction layer between our views and the framework. And in this case, the abstraction layer is the SCSS file. It's likely to be easier to maintain just that file instead of finding all usages of framework specific CSS classes across all existing views.
 
 If there's one thing to take away from that: Isolation principles are valid for every area in our applications.
