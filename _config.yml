@@ -2,8 +2,13 @@ url: https://christophgockel.github.io
 name: "Christoph"
 encoding: utf-8
 safe: true
+
+port: 8080
+host: 0.0.0.0
+show_dir_listing: false
+
 timezone: Europe/London
-markdown: redcarpet
+markdown: kramdown
 highlighter: pygments
 permalink: :title
 exclude: [README.md, LICENSE, Makefile]
@@ -13,3 +18,9 @@ environment: production
 gereksiz:
    author: "Christoph Gockel"
    email: "cgockel@8thlight.com"
+
+gems:
+  - jekyll-feed
+
+feed:
+  path: atom.xml
