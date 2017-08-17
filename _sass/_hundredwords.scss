@@ -17,7 +17,7 @@ body.hundredwords {
   article.challenge {
     @include full-width;
 
-    background-color: #ededf4;
+    background-color: $contrast-background;
     margin-bottom: 1.5rem;
     padding: 1rem 0;
 
