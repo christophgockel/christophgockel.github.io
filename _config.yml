@@ -9,7 +9,6 @@ show_dir_listing: false
 
 timezone: Europe/London
 markdown: kramdown
-highlighter: pygments
 permalink: /posts/:title
 exclude: [README.md, LICENSE, Makefile]
 
