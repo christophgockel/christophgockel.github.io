@@ -21,3 +21,9 @@ gems:
 
 feed:
   path: atom.xml
+
+collections:
+  hundredwords:
+    values:
+      layout: default
+
