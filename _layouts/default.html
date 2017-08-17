@@ -5,23 +5,22 @@
     <meta name="author" content="Christoph Gockel">
     <meta name="description" content="My 8th Light apprenticeship blog">
     <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" href="/css/syntax.css">
-    <link rel="stylesheet" href="/css/main.css">
-    <link rel="stylesheet" href="/css/normalize.css">
+    <link href='//fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css' />
+    <link rel="stylesheet" href="{{ "/assets/normalize.css" | relative_url }}" />
+    <link rel="stylesheet" href="{{ "/assets/christophgockel.css" | relative_url }}" />
+    <link rel="stylesheet" href="{{ "/assets/syntax.css" | relative_url }}">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <link rel="alternate" type="application/atom+xml" href="/atom.xml">
-    <title>{{ page.title }}</title>
+    <title>{{ page.title }} — {{ site.name }}</title>
   </head>
 
   <body>
-    <main>
     <header>
-    <h1 class="title"><a href="/">{{ site.name }}</a></h1>
+      <h1 class="title"><a href="/">{{ site.name }}</a></h1>
     </header>
 
     {{ content }}
-    </main>
 
     {% if site.environment == "production" %}
     <script>
@@ -35,5 +34,9 @@
 
     </script>
     {% endif %}
+
+    <footer>
+      <p>&copy; {{ "now" | date: "%Y" }} Christoph Gockel</p>
+    </footer>
   </body>
 </html>

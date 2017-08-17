@@ -1,5 +1,5 @@
 url: https://christophgockel.github.io
-name: "Christoph"
+name: "Christoph Gockel"
 encoding: utf-8
 safe: true
 
@@ -10,14 +10,11 @@ show_dir_listing: false
 timezone: Europe/London
 markdown: kramdown
 highlighter: pygments
-permalink: :title
+permalink: /posts/:title
 exclude: [README.md, LICENSE, Makefile]
-environment: production
 
-# Information for the Atom feed
-gereksiz:
-   author: "Christoph Gockel"
-   email: "cgockel@8thlight.com"
+author: "Christoph Gockel"
+email: "cgockel@8thlight.com"
 
 gems:
   - jekyll-feed

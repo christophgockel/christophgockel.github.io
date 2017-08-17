@@ -8,7 +8,7 @@
     <description>My 8th Light apprenticeship blog.</description>
     <link>{{ site.url }}"/></link>
     <lastBuildDate>{{ site.time | date_to_xmlschema }}</lastBuildDate>
-    <managingEditor>{{ site.gereksiz.email }} ({{ site.gereksiz.author }})</managingEditor>
+    <managingEditor>{{ site.email }} ({{ site.author }})</managingEditor>
 
     {% for post in site.posts %}
       <item>
