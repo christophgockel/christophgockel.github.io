@@ -1,0 +1,29 @@
+body.hundredwords {
+  article {
+    header {
+      text-align: center;
+
+      h1 {
+        font-size: 1.3rem;
+        margin-bottom: 0;
+      }
+
+      p {
+        font-size: 0.8rem;
+      }
+    }
+  }
+
+  article.challenge {
+    @include full-width;
+
+    background-color: #ededf4;
+    margin-bottom: 1.5rem;
+    padding: 1rem 0;
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+}
+
