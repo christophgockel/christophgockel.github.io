@@ -12,19 +12,42 @@ article.home {
   }
 
   li {
+    display: flex;
+    justify-content: space-between;
     line-height: 2em;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
 
-    span {
-      float: right;
+    @media (max-width: $desktop-size) {
+      margin-bottom: .5rem;
+    }
+
+    a {
+      flex: 2 1 80%;
+
+      @media (max-width: $desktop-size) {
+        line-height: 1.5rem;
+      }
+    }
+
+    span.post-date {
+      flex: 1 0 20%;
       font-size: .8rem;
+      text-align: right;
+
+      @media (max-width: $desktop-size) {
+        font-size: .6rem;
+        line-height: 1rem;
+        padding-top: .2rem;
+      }
     }
 
     span.external-url {
       float: none;
       font-size: .9rem;
+      margin-right: .1rem;
+
+      @media (max-width: $desktop-size) {
+        display: none;
+      }
     }
   }
 }
