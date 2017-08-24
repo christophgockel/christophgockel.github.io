@@ -10,3 +10,23 @@
 @import "posts";
 @import "hundredwords";
 
+{% if site.environment != "production" %}
+  @font-face {
+    font-family: "Raleway";
+    src: url("{{ "/assets/Raleway300.woff2" | relative_url }}") format("woff2");
+    font-weight: 300;
+  }
+
+  @font-face {
+    font-family: "Raleway";
+    src: url("{{ "/assets/Raleway400.woff2" | relative_url }}") format("woff2");
+    font-weight: 400;
+  }
+
+  @font-face {
+    font-family: "Raleway";
+    src: url("{{ "/assets/Raleway600.woff2" | relative_url }}") format("woff2");
+    font-weight: 600;
+  }
+{% endif %}
+
