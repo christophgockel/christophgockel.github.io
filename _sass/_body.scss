@@ -10,6 +10,41 @@ body {
     }
   }
 
+  nav {
+    ul {
+      display: flex;
+      list-style-type: none;
+      margin: 1rem 0;
+      padding: 0;
+
+      li {
+        flex: 1 0;
+        background: no-repeat center;
+
+        a {
+          display: block;
+          text-indent: -99999em;
+        }
+      }
+
+      li.github {
+        background-image: url("icons/github.svg");
+      }
+
+      li.twitter {
+        background-image: url("icons/twitter.svg");
+      }
+
+      li.instagram {
+        background-image: url("icons/instagram.svg");
+      }
+
+      li.e-mail {
+        background-image: url("icons/e-mail.svg");
+      }
+    }
+  }
+
   footer {
     p {
       font-size: .8rem;

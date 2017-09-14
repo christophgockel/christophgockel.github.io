@@ -1,4 +1,8 @@
-# 8th Light Apprenticeship Blog
+# Personal Blog
+## christophgockel.de
 
-A Jekyll powered blog for my apprenticeship.
+
+## Attributions
+
+Icons are from https://simpleicons.org.
 
